@@ -115,14 +115,14 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="[► Help ◄]", callback_data="help_back"),
-        InlineKeyboardButton(text="❔Chit Chat", url="https://t.me/Besties_XD"),
+        InlineKeyboardButton(text="❔Chit Chat", url="https://t.me/ANIME_GROUP_XD"),
         InlineKeyboardButton(
-            text="[► Repo ◄]", url="https://GitHub.com/Awesome-Prince/NekoRobot-3"
+            text="[► Repo ◄]", url="https://t.me/MikuXSupportChat"
         ),
     ],
     [
         InlineKeyboardButton(text="🚑 Support", url=f"https://t.me/{SUPPORT_CHAT}"),
-        InlineKeyboardButton(text="📢 Updates", url="https://t.me/BlackLover_Updates"),
+        InlineKeyboardButton(text="📢 Updates", url="https://t.me/MikuXUpdatesChannel"),
     ],
 ]
 
@@ -148,7 +148,7 @@ GROUP_START_IMG = (
 )
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Telegram](https://t.me/DarlingPrince)"""
+Click here to donate in [Telegram](https://t.me/POKEULTRALEGEND)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -278,11 +278,11 @@ def start(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🚑 Support",
-                            url=f"https://telegram.dog/{SUPPORT_CHAT}",
+                            url=f"https://t.me/MikuXSupportChat",
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/BlackLover_Updates",
+                            url="https://t.me/MikuXUpdatesChannel",
                         ),
                     ]
                 ]
@@ -405,9 +405,9 @@ def neko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Master", url="t.me/Awesome-Prince"),
+                        InlineKeyboardButton(text="Master", url="t.me/POKEULTRALEGEND"),
                         InlineKeyboardButton(
-                            text="Support", url="t.me/BlackLover_Support"
+                            text="Support", url="t.me/MikuXSupportChat"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="neko_back")],
@@ -742,7 +742,7 @@ def main():
                     [
                         [
                             InlineKeyboardButton(
-                                text="[► Summon Me ◄]",
+                                text="[► ADD ME TO YOUR GROUP! ◄]",
                                 url=f"t.me/{BOT_USERNAME}?startgroup=true",
                             ),
                         ]
