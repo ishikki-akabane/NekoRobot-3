@@ -72,13 +72,13 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Neko X](https://t.me/NekoXRobot):**
+**[Miku X](https://t.me/MikuX_Robot):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9`
 **Pyrogram:** `{pyrover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/NekoXRobot) | [OWNER](t.me/DarlingPrince)
+**Profiles:** [BOT](t.me/MikuX_Robot) | [OWNER](t.me/POKEULTRALEGEND)
 """
 
     answers.append(
