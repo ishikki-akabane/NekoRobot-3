@@ -35,8 +35,8 @@ PHOTO = "https://telegra.ph/file/298cfc581b31737823018.jpg"
 async def awake(event):
     NEKO = f"**♡ hey {event.sender.first_name} I,m Miku Nakano** \n\n"
     NEKO += "**♡ I'm Working with Cuteness**\n\n"
-    NEKO += "**♡ Neko: LATEST Version**\n\n"
-    NEKO += "**♡ My Darling:** [Levi](t.me/POKEULTRALEGEND)\n\n"
+    NEKO += "**♡ Miku: Latest Version**\n\n"
+    NEKO += "**♡ My Darling:** [𝗟𝗲𝘃𝗶](t.me/POKEULTRALEGEND)\n\n"
     NEKO += "**♡ python-Telegram-Bot: 13.11**\n\n"
     BUTTON = [
         [
