@@ -147,7 +147,7 @@ GROUP_START_IMG = (
     "https://telegra.ph/file/4ace6e89c3b1d3a08e943.mp4",
 )
 
-MIKU_UPDATE_PIC = "https://te.legra.ph/file/9d870bf5300a7e8395f4a.jpg"
+MIKU_UPDATE_PIC = "https://telegra.ph/file/3ad26dff2ecd5904aea0a.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Click here to donate in [Telegram](https://t.me/POKEULTRALEGEND)"""
