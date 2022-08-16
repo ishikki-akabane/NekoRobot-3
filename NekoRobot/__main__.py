@@ -147,6 +147,8 @@ GROUP_START_IMG = (
     "https://telegra.ph/file/4ace6e89c3b1d3a08e943.mp4",
 )
 
+MIKU_UPDATE_PIC = "https://te.legra.ph/file/9d870bf5300a7e8395f4a.jpg"
+
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Click here to donate in [Telegram](https://t.me/POKEULTRALEGEND)"""
 
@@ -734,16 +736,16 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(
+            dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
-                "[Iam Alive!](https://telegra.ph/file/4533d130b73a7dd20b83d.jpg)",
+                MIKU_UPDATE_PIC, caption=f"мιкυ ηαкαησ ιѕ ѕтαятє∂\n• ι αм яєα∂у тσ ωσяк\n• ℓєтѕ gєт тнє ραяту ѕтαятє∂",
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="[► ADD ME TO YOUR GROUP! ◄]",
-                                url=f"t.me/{BOT_USERNAME}?startgroup=true",
+                                text="⚜️ σғғ-тσριᴄ ⚜️",
+                                url="https://t.me/ANIME_GROUP_XD",
                             ),
                         ]
                     ]
