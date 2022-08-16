@@ -587,7 +587,6 @@ def __user_info__(user_id):
 
 __help__ = """
 help = """
-help = """
 *Away from group*
  ❍ /afk <reason>*:* mark yourself as AFK(away from keyboard).
  ❍ brb <reason>*:* same as the afk command - but not a command.
