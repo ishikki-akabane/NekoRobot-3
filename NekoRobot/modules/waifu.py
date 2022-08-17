@@ -11,7 +11,7 @@ import NekoRobot.modules.waifu_string as waifu_string
 url_sfw_1 = "https://api.waifu.pics/sfw/" 
 url_sfw_2 = "https://nekos.best/"
 
-@run_async
+
 def waifu(update, context):
     try:
         msg = update.effective_message
@@ -32,12 +32,12 @@ def waifu(update, context):
         msg.reply_text(text, parse_mode=ParseMode.HTML)
 
         
-@run_async
+
 def waifus(update, context):
     update.effective_message.reply_photo(random.choice(waifu_string.WAIFUS))
 
     
-@run_async
+
 def swaifu(update, context):
     msg = update.effective_message
     url = f"{url_sfw_1}waifu" 
@@ -47,9 +47,9 @@ def swaifu(update, context):
     
     
 
-WAIFU_HANDLER = CommandHandler('waifuinfo', waifu)
-WAIFUS_HANDLER = CommandHandler("waifus", waifu)
-SWAIFU_HANDLER = CommandHandler('swaifu', swaifu)
+WAIFU_HANDLER = CommandHandler('waifuinfo', waifu, run_async=True)
+WAIFUS_HANDLER = CommandHandler("waifus", waifu, run_async=True)
+SWAIFU_HANDLER = CommandHandler('swaifu', swaifu, run_async=True)
 
 dispatcher.add_handler(WAIFU_HANDLER)
 dispatcher.add_handler(SWAIFU_HANDLER)
