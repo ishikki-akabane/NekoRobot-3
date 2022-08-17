@@ -242,10 +242,10 @@ def info(update: Update, context: CallbackContext):
     buttons = [
         [
             InlineKeyboardButton(
-                text="Health", url="https://t.me/BlackLover_Updates/10"
+                text="Health", url="https://t.me/MikuXUpdatesChannel/22"
             ),
             InlineKeyboardButton(
-                text="Disasters", url="https://t.me/BlackLover_Updates/11"
+                text="Disasters", url="https://t.me/MikuXUpdatesChannel/21"
             ),
         ],
     ]
@@ -328,8 +328,8 @@ def info(update: Update, context: CallbackContext):
         text += "\n\nтнιѕ ∂ιѕαѕтєя ℓєνєℓ σƒ тнє ρєяѕση ιѕ 'Tiger'."
     elif user.id in WOLVES:
         text += "\n\nтнιѕ ∂ιѕαѕтєя ℓєνєℓ σƒ тнє ρєяѕση ιѕ 'Wolf'."
-    elif user.id == 5561111332:
-        text += "\n\nSenorita Is Girlfriend Of @POKEULTRALEGENDS."
+    elif user.id == 1925104967:
+        text += "\n\nYE KAMINA MADHARCHOD BSDKA BHENCHOD HAI IS SE BACH KE REHE!."
 
     try:
         user_member = chat.get_member(user.id)
