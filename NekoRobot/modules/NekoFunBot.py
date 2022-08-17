@@ -26,6 +26,12 @@ from telegram.ext import Filters
 from NekoRobot import dispatcher
 from NekoRobot.modules.disable import MessageHandler
 
+#ishikki----------
+from NekoRobot.events import register
+from pyjokes import get_joke
+import NekoRobot.modules.NekoFunBot_Strings
+#-----------------
+
 OWO = (
     "*Neko pats {} on the head.",
     "*gently rubs {}'s head*.",
@@ -41,6 +47,16 @@ K = "Vid" "Text" "Gif"
 
 sleep_type = random.choice(K)
 
+#-----@ishikki_akabane---------
+@register(pattern="^/joke ?(.*)")
+async def joke(event):
+    await event.reply(get_joke())
+
+@run_async
+def flirt(update: Update, context: CallbackContext):
+    args = context.args
+    update.effective_message.reply_text(random.choice(NekoFunBot_Strings.FLIRT))
+#------------------------------
 
 def kiss(update, context):
     url = "https://nekos.best/api/v2/kiss"
@@ -142,6 +158,7 @@ CUTE_HANDLER = MessageHandler(Filters.regex("(?i)Neko cute"), cute, run_async=Tr
 SLEEP_HANDLER = MessageHandler(
     Filters.regex("^(Neko sleep|sleep)$"), sleep, run_async=True
 )
+FLIRT_HANDLER = MessageHandler("flirt", flirt)
 
 dispatcher.add_handler(KISS_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
@@ -149,3 +166,4 @@ dispatcher.add_handler(HUG_HANDLER)
 dispatcher.add_handler(SLAP_HANDLER)
 dispatcher.add_handler(CUTE_HANDLER)
 dispatcher.add_handler(SLEEP_HANDLER)
+dispatcher.add_handler(FLIRT_HANDLER)
