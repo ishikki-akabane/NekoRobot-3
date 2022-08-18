@@ -48,7 +48,7 @@ def swaifu(update, context):
     
 
 WAIFU_HANDLER = CommandHandler('waifuinfo', waifu, run_async=True)
-WAIFUS_HANDLER = CommandHandler("waifus", waifu, run_async=True)
+WAIFUS_HANDLER = CommandHandler("waifus", waifus, run_async=True)
 SWAIFU_HANDLER = CommandHandler('swaifu', swaifu, run_async=True)
 
 dispatcher.add_handler(WAIFU_HANDLER)
