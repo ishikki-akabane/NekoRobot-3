@@ -156,7 +156,7 @@ HUG_HANDLER = MessageHandler(Filters.regex("(?i)Neko hug"), hug, run_async=True)
 SLAP_HANDLER = MessageHandler(Filters.regex("(?i)Neko slap"), slap, run_async=True)
 CUTE_HANDLER = MessageHandler(Filters.regex("(?i)Neko cute"), cute, run_async=True)
 SLEEP_HANDLER = MessageHandler(
-    Filters.regex("^(Neko sleep|sleep)$"), sleep, @run_async=True
+    Filters.regex("^(Neko sleep|sleep)$"), sleep, run_async=True
 )
 FLIRT_HANDLER = MessageHandler("flirt", flirt, run_async=True)
 
