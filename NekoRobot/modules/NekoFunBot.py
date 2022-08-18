@@ -53,7 +53,7 @@ async def joke(event):
     await event.reply(get_joke())
 
 
-def flirt(update: Update, context: CallbackContext):
+def flirt(update, context):
     args = context.args
     update.effective_message.reply_text(random.choice(NekoFunBot_Strings.FLIRT))
 #------------------------------
