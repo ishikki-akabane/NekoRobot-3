@@ -52,7 +52,7 @@ sleep_type = random.choice(K)
 async def joke(event):
     await event.reply(get_joke())
 
-@run_async
+
 def flirt(update: Update, context: CallbackContext):
     args = context.args
     update.effective_message.reply_text(random.choice(NekoFunBot_Strings.FLIRT))
@@ -158,7 +158,7 @@ CUTE_HANDLER = MessageHandler(Filters.regex("(?i)Neko cute"), cute, run_async=Tr
 SLEEP_HANDLER = MessageHandler(
     Filters.regex("^(Neko sleep|sleep)$"), sleep, run_async=True
 )
-FLIRT_HANDLER = MessageHandler("flirt", flirt)
+FLIRT_HANDLER = MessageHandler("flirt", flirt, run_async=True)
 
 dispatcher.add_handler(KISS_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
