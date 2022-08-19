@@ -1,8 +1,8 @@
 import aiohttp
 from pyrogram import filters
-from NekoX import pgram as miku
+from NekoX import pgram as neko
 
-@miku.on_message(filters.command('pokedex'))
+@neko.on_message(filters.command('pokedex'))
 async def PokeDex(_, message):
     if len(message.command) != 2:
         await message.reply_text("/pokedex Pokemon Name")
