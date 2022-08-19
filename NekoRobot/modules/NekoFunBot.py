@@ -24,7 +24,7 @@ import requests
 from telegram.ext import Filters
 
 from NekoRobot import dispatcher
-from NekoRobot.modules.disable import MessageHandler
+from NekoRobot.modules.disable import MessageHandler, DisableAbleCommandHandler
 
 #ishikki----------
 from NekoRobot.events import register
@@ -158,7 +158,7 @@ CUTE_HANDLER = MessageHandler(Filters.regex("(?i)Neko cute"), cute, run_async=Tr
 SLEEP_HANDLER = MessageHandler(
     Filters.regex("^(Neko sleep|sleep)$"), sleep, run_async=True
 )
-FLIRT_HANDLER = MessageHandler(Filters.regex("(?i)Neko flirt"), flirt, run_async=True)
+FLIRT_HANDLER = DisableAbleCommandHandler("flirt", flirt, run_async=True)
 
 dispatcher.add_handler(KISS_HANDLER)
 dispatcher.add_handler(PAT_HANDLER)
